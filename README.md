@@ -20,6 +20,7 @@ create_table.sql - including code for creating all the tables (staging tables, d
 - data_quality.py in plugins.operators - including codes for quality checks
 ## Section 3: Define the Data Model
 In this project, I used star schema to design the data model. Please refer to the design below -
+![alt text](https://github.com/pintolx/Citi-Bikes-Data-Pipeline-Using-Airflow-AWS-S3-and-Redshift/blob/master/Citi%20Bikes%20Data%20Model%20Diagram.jpg)
 
 ## Section 4: Run ETL to Model the Data in Airflow
 The dag is setup to run once a month because the data is updated monthly, there is a data quality check to ensure that all the tables ingest data.
