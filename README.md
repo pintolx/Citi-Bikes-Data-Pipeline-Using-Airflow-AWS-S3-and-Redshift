@@ -13,11 +13,11 @@ Locations data - includes datasetid, fields, geometry, record_timestamp, recorde
 Please note that I used a different folder in my s3 bucket to store the cleaned csv file from the locations file and a different folder to store the trips data
 # Output Code Files
 create_table.sql - including code for creating all the tables (staging tables, dimension tables, and fact tables). It needs to be run before running the airflow dags.
-Citi_bikes_dag.py - dag file for all dag config, and task information
-sql_queries.py in plugins.helpers - including codes for ETL and deleting data if necessary
-stage_csv_to_redshift.py in plugins.operators - including codes for staging csv data from s3 bucket to redshift
-load_dimension/load_fact.py in plugins.operators - including codes for connecting to redshift, and executing codes for ETL
-data_quality.py in plugins.operators - including codes for quality checks
+- Citi_bikes_dag.py - dag file for all dag config, and task information
+- sql_queries.py in plugins.helpers - including codes for ETL and deleting data if necessary
+- stage_csv_to_redshift.py in plugins.operators - including codes for staging csv data from s3 bucket to redshift
+- load_dimension/load_fact.py in plugins.operators - including codes for connecting to redshift, and executing codes for ETL
+- data_quality.py in plugins.operators - including codes for quality checks
 # Section 3: Define the Data Model
 In this project, I used star schema to design the data model. Please refer to the design below -
 
