@@ -1,5 +1,5 @@
 # Citi-Bikes-Data-Pipeline-Using-Airflow-AWS-S3-and-Redshift
-# New York Citi Bikes Data Pipeline
+** New York Citi Bikes Data Pipeline
 Building an end-to-end data pipeline for a bikes company based in New York City
 # Section 1: Scope the Project and Gather Data
 Citi Bike is a privately owned public bicycle sharing system serving the New York City boroughs of Manhattan, Queens, and Brooklyn, as well as Jersey City, New Jersey. Since it publicly shares its data here: [https://www.citibikenyc.com/system-data], many people have been curious about questions like Where do Citi Bikers ride? When do they ride? How far do they go? Which stations are most popular? What days of the week are most rides taken on? This project aims to answer some of those questions.
