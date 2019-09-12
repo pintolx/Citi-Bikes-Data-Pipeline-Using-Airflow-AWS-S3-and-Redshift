@@ -35,23 +35,31 @@ Here is the quality check results screenshot –
 # Section 5: Sample analysis queries
 Here are some of the questions that can be answered using this new data warehouse -
 1.	"How many unique bike stations do we have in New York City and in what zip code are they located?"
+```
 Sample query -
 select count(distinct stationid) 
 from stations
+
 select station_name, latitude, longitude
 from stations
 where station_zipcode = ''
+```
+
 2.	"What is the hour of the day with the most trips on a given date?
+```
 Sample query -
 Select start_hour, count(tripid) 
 from trips
 where date(start_time) = ‘2017-06-06’
 group by start_hour
+```
 3.	"What is the longest trip on any given date?"
+```
 Sample query -
 select max(duration) 
 from trips
 where date(start_time) = ‘2017-06-06’
+```
 # Section 6: Limitations
 Because Citi Bikes provide the data, we do not have control of the data structure. The data does not have more information about the consumers and thus we cannot be able to do more analysis on user behavior. As such, the users table only has the user type and subscriber type.  
 # Section 7: Difficulties of this Project
