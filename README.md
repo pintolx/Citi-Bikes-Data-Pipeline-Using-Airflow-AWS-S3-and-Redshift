@@ -24,10 +24,10 @@ In this project, I used star schema to design the data model. Please refer to th
 # Section 4: Run ETL to Model the Data in Airflow
 The dag is setup to run once a month because the data is updated monthly, there is a data quality check to ensure that all the tables ingest data.
 DAG config is as follows -
-•	The DAG does not have dependencies on past runs
-•	On failure, the task are retried 3 times
-•	Retries happen every 5 minutes
-•	Catchup is turned off
+-	The DAG does not have dependencies on past runs
+-	On failure, the task are retried 3 times
+-	Retries happen every 5 minutes
+-	Catchup is turned off
 Please refer to the graph view follows the flow shown in the image below – 
 
 Here is the quality check results screenshot – 
