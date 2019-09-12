@@ -29,9 +29,11 @@ DAG config is as follows -
 -	On failure, the task are retried 3 times
 -	Retries happen every 5 minutes
 -	Catchup is turned off
-Please refer to the graph view follows the flow shown in the image below – 
+Please refer to the graph view follows the setup shown in the image below – 
+![alt text](https://github.com/pintolx/Citi-Bikes-Data-Pipeline-Using-Airflow-AWS-S3-and-Redshift/blob/master/Citi%20Bikes%20DAG%20Graph.PNG)
 
 Here is the quality check results screenshot – 
+![alt text](https://github.com/pintolx/Citi-Bikes-Data-Pipeline-Using-Airflow-AWS-S3-and-Redshift/blob/master/Citi%20Bikes%20Pipeline%20Data%20Quality%20Check.PNG)
 
 ## Section 5: Sample analysis queries
 Here are some of the questions that can be answered using this new data warehouse -
